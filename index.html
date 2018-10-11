@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理登录</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: #93defe;
+        }
+        .login-box{
+            width: 1100px;
+            margin:100px auto;
+        }
+        .login-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .left-content{
+            background: url("./images/login-img.png") no-repeat;
+            width: 500px;
+            height: 440px;
+        }
+        .login{
+            width: 400px;
+            height: 360px;
+            background: white;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            padding-top: 80px;
+            box-sizing: border-box;
+            color: #888;
+        }
+        .logo{
+            width: 120px;
+            height: 120px;
+            background: rgb(255,255,255);
+            border: 5px solid  #93defe;
+            border-radius:50%;
+            box-sizing: border-box;
+            position: absolute;
+            left: 50%;
+            margin-left: -60px;
+            top: -60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login p{
+            padding: 10px 20px;
+        }
+        .login input{
+            box-sizing: border-box;
+            padding: 15px 15px;
+            width: 300px;
+            border: 1px solid rgb(220, 222, 224);
+            border-radius: 5px;
+            outline: none;
+        }
+        .login button{
+            border: none;
+            background: rgb(39, 169, 227);
+            color: rgb(255,255,255);
+            padding: 15px 15px;
+            width: 300px;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+        .login button:hover{
+            background: #93defe;
+        }
+    </style>
+</head>
+<body>
+<div class="login-box">
+    <div class="left-content"></div>
+    <div class="right-content">
+        <div class="login">
+            <div class="logo"><img src="./images/login_logo.png" alt=""></div>
+            <p>XXX后台管理系统</p>
+            <p>
+                <input type="text" placeholder="用户名">
+            </p>
+            <p>
+                <input type="password" placeholder="密码">
+            </p>
+            <p>
+                <button type="button">登录</button>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
